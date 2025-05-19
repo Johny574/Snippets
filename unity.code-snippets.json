@@ -1,0 +1,218 @@
+{
+	"Debugger Log": {
+		"prefix": "-log",
+		"body": [
+			"Debug.Log($1);"
+		],
+		"description": "Log output to debugger"
+	},
+
+
+	"Log nuts": {
+		"prefix": "-lognuts",
+		"body": [
+			"Debug.Log(\"Deesnuts\");"
+		],
+		"description": "Log dees nuts"
+	},
+
+	"Start": {
+		"prefix": "-start",
+		"body": [
+			"void Start()",
+			"{",
+			"\t$1",
+			"}"
+		],
+		"description": "Start method."
+	},
+
+	"Awake": {
+		"prefix": "-awake",
+		"body": [
+			"void Awake()",
+			"{",
+			"\t$1",
+			"}"
+		],
+		"description": "Awake method."
+	},
+
+	"Update": {
+		"prefix": "-update",
+		"body": [
+			"void Update()",
+			"{",
+			"\t$1",
+			"}"
+		],
+		"description": "Update method."
+	},
+
+	"Enable": {
+		"prefix": "-enable",
+		"body": [
+			"void OnEnable()",
+			"{",
+			"\t$1",
+			"}"
+		],
+		"description": "OnEnable method."
+	},
+
+	"Disable": {
+		"prefix": "-disable",
+		"body": [
+			"void OnDisable()",
+			"{",
+			"\t$1",
+			"}"
+		],
+		"description": "OnDisable method."
+	},
+
+	"Trigger Enter": {
+		"prefix": "-trigger-enter",
+		"body": [
+			"public void OnTriggerEnter(Collider col)",
+			"{",
+			"\t$1",
+			"}"
+		],
+		"description": "Trigger enter."
+	},
+
+	"Trigger Exit": {
+		"prefix": "-trigger-exit",
+		"body": [
+			"public void OnTriggerExit(Collider col)",
+			"{",
+			"\t$1",
+			"}"
+		],
+		"description": "Trigger exit."
+	},
+
+	"Trigger Stay": {
+		"prefix": "-trigger-stay",
+		"body": [
+			"public void OnTriggerStay(Collider col)",
+			"{",
+			"\t$1",
+			"}"
+		],
+		"description": "Trigger stay."
+	},
+
+	"Collision Enter": {
+		"prefix": "-col-enter",
+		"body": [
+			"public void OnCollisionEnter(Collision col)",
+			"{",
+			"\t$1",
+			"}"
+		],
+		"description": "Collision enter."
+	},
+
+	"Collision Exit": {
+		"prefix": "-col-exit",
+		"body": [
+			"public void OnCollisionExit(Collision col)",
+			"{",
+			"\t$1",
+			"}"
+		],
+		"description": "Collision exit."
+	},
+
+	"Collision Stay": {
+		"prefix": "-col-stay",
+		"body": [
+			"public void OnCollisionStay(Collision col)",
+			"{",
+			"\t$1",
+			"}"
+		],
+		"description": "Collision stay."
+	},
+	
+	"Class": {
+		"prefix": "-class",
+		"body": [
+			"public class $1 : $2",
+			"{",
+			"\t$3",
+			"}"
+		],
+		"description": "Create new class."
+	},
+	
+	"Backing field": {
+		"prefix": "-b-field",
+		"body": [
+			"[field:SerializeField]"
+		],
+		"description": "Backing field."
+	},
+
+	"Backing field properties": {
+		"prefix": "-getset",
+		"body": [
+			"{ get; private set; }"
+		],
+		"description": "Backing field properties."
+	},
+
+	"Singleton": {
+		"prefix": "-singleton",
+		"body": [
+			"public class $1 : MonoBehaviour",
+			"{",
+			"\tpublic static $1 Instance;",
+			"",
+			"\tvoid Awake()",
+			"\t{",
+			"\t\tif (Instance == null) { Instance = this; }",
+			"\t}",
+			"}"
+		],
+		"description": "Singleton."
+	},
+
+	"SetUp": {
+		"prefix": "-setup",
+		"body": [
+			"[SetUp]",
+			"public void SetUp()",
+			"{",
+			"\t$1",
+			"}"
+		],
+		"description": "Setup method."
+	},
+
+	"TearDown": {
+		"prefix": "-teardown",
+		"body": [
+			"[TearDown]",
+			"public void TearDown()",
+			"{",
+			"\t$1",
+			"}"
+		],
+		"description": "Teardown method."
+	},
+
+	"Test": {
+		"prefix": "-test",
+		"body": [
+			"[Test]",
+			"public void $1()",
+			"{",
+			"\tAssert.Fail();$2",
+			"}"
+		],
+		"description": "Test method."
+	}
+}
