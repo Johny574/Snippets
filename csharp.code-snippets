@@ -1,15 +1,80 @@
 {
-	// Place your snippets for csharp here. Each snippet is defined under a snippet name and has a prefix, body and 
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-	// same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
+	"Main": {
+		"scope": "csharp",
+		"prefix": "-main",
+		"body": [
+			"public static class Program",
+			"{",
+			"\tpublic static void Main(string[] args)",
+			"\t{",
+			"\t\t$2",
+			"\t}",
+			"}"
+		],
+		"description": "Log output to console"
+	},
+	
+	"Class": {
+		"scope": "csharp",
+		"prefix": "-class",
+		"body": [
+			"public class $1 : $2",
+			"{",
+			"\t$3",
+			"}"
+		],
+		"description": "Create new class."
+	},
+
+	"Interface": {
+		"scope": "csharp",
+		"prefix": "-interface",
+		"body": [
+			"public interface $1",
+			"{",
+			"\t$2",
+			"}"
+		],
+		"description": "Interface."
+	},
+
+	"SetUp": {
+		"scope": "csharp",
+		"prefix": "-setup",
+		"body": [
+			"[SetUp]",
+			"public void SetUp()",
+			"{",
+			"\t$1",
+			"}"
+		],
+		"description": "Setup method."
+	},
+
+	"TearDown": {
+		"scope": "csharp",
+		"prefix": "-teardown",
+		"body": [
+			"[TearDown]",
+			"public void TearDown()",
+			"{",
+			"\t$1",
+			"}"
+		],
+		"description": "Teardown method."
+	},
+
+	"Test": {
+		"scope": "csharp",
+		"prefix": "-test",
+		"body": [
+			"[Test]",
+			"public void $1()",
+			"{",
+			"\tAssert.IsTrue(false);$2",
+			"}"
+		],
+		"description": "Test method."
+	}
+
 }

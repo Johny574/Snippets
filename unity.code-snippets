@@ -1,5 +1,6 @@
 {
 	"Debugger Log": {
+		"scope": "csharp",
 		"prefix": "-log",
 		"body": [
 			"Debug.Log($1);"
@@ -8,6 +9,7 @@
 	},
 
 	"Log nuts": {
+		"scope": "csharp",
 		"prefix": "-lognuts",
 		"body": [
 			"Debug.Log(\"Deesnuts\");"
@@ -16,6 +18,7 @@
 	},
 
 	"Start": {
+		"scope": "csharp",
 		"prefix": "-start",
 		"body": [
 			"void Start()",
@@ -27,6 +30,7 @@
 	},
 
 	"Awake": {
+		"scope": "csharp",
 		"prefix": "-awake",
 		"body": [
 			"void Awake()",
@@ -38,6 +42,7 @@
 	},
 
 	"Update": {
+		"scope": "csharp",
 		"prefix": "-update",
 		"body": [
 			"void Update()",
@@ -49,6 +54,7 @@
 	},
 
 	"Enable": {
+		"scope": "csharp",
 		"prefix": "-enable",
 		"body": [
 			"void OnEnable()",
@@ -60,6 +66,7 @@
 	},
 
 	"Disable": {
+		"scope": "csharp",
 		"prefix": "-disable",
 		"body": [
 			"void OnDisable()",
@@ -71,6 +78,7 @@
 	},
 
 	"Trigger Enter": {
+		"scope": "csharp",
 		"prefix": "-trigger-enter",
 		"body": [
 			"public void OnTriggerEnter(Collider col)",
@@ -82,6 +90,7 @@
 	},
 
 	"Trigger Exit": {
+		"scope": "csharp",
 		"prefix": "-trigger-exit",
 		"body": [
 			"public void OnTriggerExit(Collider col)",
@@ -93,6 +102,7 @@
 	},
 
 	"Trigger Stay": {
+		"scope": "csharp",
 		"prefix": "-trigger-stay",
 		"body": [
 			"public void OnTriggerStay(Collider col)",
@@ -104,6 +114,7 @@
 	},
 
 	"Collision Enter": {
+		"scope": "csharp",
 		"prefix": "-col-enter",
 		"body": [
 			"public void OnCollisionEnter(Collision col)",
@@ -115,6 +126,7 @@
 	},
 
 	"Collision Exit": {
+		"scope": "csharp",
 		"prefix": "-col-exit",
 		"body": [
 			"public void OnCollisionExit(Collision col)",
@@ -126,6 +138,7 @@
 	},
 
 	"Collision Stay": {
+		"scope": "csharp",
 		"prefix": "-col-stay",
 		"body": [
 			"public void OnCollisionStay(Collision col)",
@@ -137,6 +150,7 @@
 	},
 	
 	"Class": {
+		"scope": "csharp",
 		"prefix": "-class",
 		"body": [
 			"public class $1 : $2",
@@ -148,6 +162,7 @@
 	},
 
 	"Interface": {
+		"scope": "csharp",
 		"prefix": "-interface",
 		"body": [
 			"public interface $1",
@@ -159,6 +174,7 @@
 	},
 	
 	"Backing field": {
+		"scope": "csharp",
 		"prefix": "-b-field",
 		"body": [
 			"[field:SerializeField]"
@@ -167,6 +183,7 @@
 	},
 
 	"Backing field properties": {
+		"scope": "csharp",
 		"prefix": "-getset",
 		"body": [
 			"{ get; private set; }"
@@ -175,6 +192,7 @@
 	},
 
 	"Singleton": {
+		"scope": "csharp",
 		"prefix": "-singleton",
 		"body": [
 			"public class $1 : MonoBehaviour",
@@ -191,6 +209,7 @@
 	},
 
 	"SetUp": {
+		"scope": "csharp",
 		"prefix": "-setup",
 		"body": [
 			"[UnitySetUp]",
@@ -204,6 +223,7 @@
 	},
 
 	"TearDown": {
+		"scope": "csharp",
 		"prefix": "-teardown",
 		"body": [
 			"[UnityTearDown]",
@@ -216,7 +236,8 @@
 		"description": "Teardown method."
 	},
 
-	"UnityTest": {
+	"Test": {
+		"scope": "csharp",
 		"prefix": "-test",
 		"body": [
 			"[UnityTest]",
